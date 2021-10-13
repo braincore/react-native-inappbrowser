@@ -162,6 +162,7 @@ public class RNInAppBrowser {
       intent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
       intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
     }
+    intent.addFlags(Intent.FLAG_ACTIVITY_REQUIRE_NON_BROWSER);
 
     intent.putExtra(CustomTabsIntent.EXTRA_ENABLE_URLBAR_HIDING, (
       options.hasKey(KEY_ENABLE_URL_BAR_HIDING) && 
